@@ -7,5 +7,10 @@ DECLARE @CurrentHId hierarchyid
 
 SELECT @CurrentHId = EntitiyHierarchyId FROM EntitiyHierarchy WHERE EntityId = @thisHId ;
 
-SELECT * FROM EntitiyHierarchy WHERE EntitiyHierarchyId.IsDescendantOf(@CurrentHId) = 1 AND EntityType = 2 ;
+SELECT
+  City.CityId, City.City FROM dbo.EntitiyHierarchy 
+  INNER JOIN dbo.City ON EntitiyHierarchy.EntityId = City.CityId 
+	WHERE 
+		EntitiyHierarchy.EntitiyHierarchyId.IsDescendantOf(@CurrentHId) = 1
+		AND EntitiyHierarchy.EntityType = 2;
 

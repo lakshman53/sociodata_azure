@@ -1,5 +1,6 @@
 ﻿CREATE PROCEDURE [dbo].[usp_AddRegion]
 	@regionid int
+	, @EntityName nvarchar(50)
 AS
 BEGIN
    DECLARE @mOrgNode hierarchyid, @lc hierarchyid
@@ -12,7 +13,7 @@ BEGIN
       FROM EntitiyHierarchy 
       WHERE EntitiyHierarchyId.GetAncestor(1) =@mOrgNode ;
 
-      INSERT EntitiyHierarchy (EntitiyHierarchyId, EntityId, EntityType)
-      VALUES(@mOrgNode.GetDescendant(@lc, NULL), @regionid, 1)
+      INSERT EntitiyHierarchy (EntitiyHierarchyId, EntityId, EntityType, EntityName)
+      VALUES(@mOrgNode.GetDescendant(@lc, NULL), @regionid, 1, @EntityName)
    COMMIT
 END ;
