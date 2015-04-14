@@ -14,7 +14,7 @@ BEGIN
       WHERE EntitiyHierarchyId.GetAncestor(1) = @mEntitiyHierarchyId ;
       
 	  INSERT EntitiyHierarchy (EntitiyHierarchyId, EntityId, EntityType)
-      VALUES(@mEntitiyHierarchyId.GetDescendant(@lc, NULL), @level4id, 3)
+      VALUES(@mEntitiyHierarchyId.GetDescendant(@lc, NULL), @level4id, 4)
    COMMIT
 
 END;
