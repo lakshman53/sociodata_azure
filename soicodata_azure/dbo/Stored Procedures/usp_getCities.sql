@@ -1,4 +1,4 @@
-﻿CREATE PROCEDURE [dbo].[getCities]
+﻿CREATE PROCEDURE [dbo].[usp_getCities]
 	@thisHId int 
 	
 AS
