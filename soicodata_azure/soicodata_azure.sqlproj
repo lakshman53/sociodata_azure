@@ -174,8 +174,13 @@
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
     <Build Include="dbo\Stored Procedures\usp_AddRegion.sql" />
+    <Build Include="dbo\Stored Procedures\usp_AddCity.sql" />
+    <Build Include="dbo\Stored Procedures\getCities.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="soicodata_azure.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="soicodata_azure.refactorlog" />
   </ItemGroup>
 </Project>

@@ -16,6 +16,3 @@ BEGIN
       VALUES(@mOrgNode.GetDescendant(@lc, NULL), @regionid, 1)
    COMMIT
 END ;
-
-
-
