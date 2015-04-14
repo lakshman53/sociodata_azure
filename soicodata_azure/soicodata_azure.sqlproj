@@ -180,6 +180,7 @@
     <Build Include="dbo\Stored Procedures\usp_addStore.sql" />
     <Build Include="dbo\Stored Procedures\usp_getStores.sql" />
     <Build Include="dbo\Stored Procedures\usp_getArea.sql" />
+    <Build Include="dbo\Stored Procedures\usp_getRegion.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="soicodata_azure.publish.xml" />
