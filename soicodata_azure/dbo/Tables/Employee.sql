@@ -15,6 +15,8 @@
     [WeeklyOff]        SMALLINT       NULL,
     [OfficeStart]      TIME (7)       NULL,
     [OfficeEnd]        TIME (7)       NULL,
+    [ClientEmpNum] NVARCHAR(50) NULL, 
+    [EmpImage] NVARCHAR(100) NULL, 
     CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED ([EmpId] ASC),
     CONSTRAINT [FK_Employee_Designation] FOREIGN KEY ([Designation]) REFERENCES [dbo].[Designation] ([DesignationId]),
     CONSTRAINT [FK_Employee_Store] FOREIGN KEY ([StoreId]) REFERENCES [dbo].[Store] ([StoreId])
