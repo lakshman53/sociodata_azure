@@ -173,8 +173,8 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="dbo\Stored Procedures\usp_AddRegion.sql" />
-    <Build Include="dbo\Stored Procedures\usp_AddCity.sql" />
+    <Build Include="dbo\Stored Procedures\usp_addRegion.sql" />
+    <Build Include="dbo\Stored Procedures\usp_addCity.sql" />
     <Build Include="dbo\Stored Procedures\usp_getCities.sql" />
     <Build Include="dbo\Stored Procedures\usp_addArea.sql" />
     <Build Include="dbo\Stored Procedures\usp_addStore.sql" />
